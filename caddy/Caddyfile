@@ -13,7 +13,7 @@
 	# =========================
 	handle /api/* {
 		rewrite * /todo{uri}
-		reverse_proxy localhost:8080
+		reverse_proxy localhost:8081
 	}
 
 	# Serve the built React app for everything else.
